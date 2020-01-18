@@ -11,6 +11,7 @@
   <link rel="stylesheet" href="plugins/fontawesome-free/css/all.min.css">
   <!-- Theme style -->
   <link rel="stylesheet" href="dist/css/adminlte.min.css">
+  <link rel="stylesheet" href="dist/css/style.css">
   <!-- Google Font: Source Sans Pro -->
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
 
@@ -134,7 +135,7 @@
                   <!-- /.card-body -->
 
                   <div class="card-footer">
-                    <button type="submit" class="btn btn-primary" id="btnSubmit">Save</button>
+                    <button type="button" class="btn btn-primary" id="btnSubmit">Save</button>
                     <button type="reset" class="btn btn-warning">Clear</button>
                   </div>
                 </form>
@@ -144,7 +145,7 @@
             <div class="col col-12 col-md-6">
               <div class="card card-primary card-outline">
                 <div class="card-body">
-                  <table id="tbl-students" class="table table-hover table-bordered">
+                  <table id="tbl-customer" class="table table-hover table-bordered">
                     <thead>
                     <tr>
                       <th class="text-center">ID</th>
@@ -154,47 +155,13 @@
                     </tr>
                     </thead>
                     <tbody>
-                    <tr>
-                      <td>C001</td>
-                      <td>Alisa</td>
-                      <td>Pinwatte</td>
-                      <td>
-                        <i class="fa fa-trash"></i>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>C002</td>
-                      <td>Ashan</td>
-                      <td>Homagama</td>
-                      <td>
-                        <i class="fa fa-trash"></i>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>C001</td>
-                      <td>Alisa</td>
-                      <td>Pinwatte</td>
-                      <td>
-                        <i class="fa fa-trash"></i>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>C001</td>
-                      <td>Alisa</td>
-                      <td>Pinwatte</td>
-                      <td>
-                        <i class="fa fa-trash"></i>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>C002</td>
-                      <td>Ashan</td>
-                      <td>Homagama</td>
-                      <td>
-                        <i class="fa fa-trash"></i>
-                      </td>
-                    </tr>
+
                     </tbody>
+                    <tfoot>
+                  <tr>
+                    <td colspan="5" class="center">There are no records right now !</td>
+                  </tr>
+                  </tfoot>
                   </table>
                 </div><!-- /.card-body -->
                 <div class="card-footer">
@@ -209,7 +176,6 @@
               </div>
             </div>
           </div>
-          <!-- /.row (main row) -->
         </div><!-- /.container-fluid -->
       </section>
       <!-- /.content -->
@@ -237,10 +203,9 @@
   <script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
   <!-- AdminLTE App -->
   <script src="dist/js/adminlte.js"></script>
-  <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
-  <script src="dist/js/pages/dashboard.js"></script>
-  <!-- AdminLTE for demo purposes -->
-  <script src="dist/js/demo.js"></script>
+  <script src="dist/js/pages/database.js"></script>
+  <script src="dist/js/pages/customer.js"></script>
+
 </body>
 
 </html>
