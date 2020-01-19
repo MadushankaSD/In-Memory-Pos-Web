@@ -38,5 +38,12 @@ var order=[
         customerId:"C002",
         customersName:"Kamal",
         total:"500"
+    },
+    {
+        ordrId:'OD:003',
+        date:'2015/10/10',
+        customerId:"C003",
+        customersName:"Nimal",
+        total:"8000"
     }
 ];

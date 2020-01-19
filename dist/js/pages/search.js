@@ -12,7 +12,7 @@ $(function () {
 });
 var sval;
 function searchOrder() {
-
+var test=true;
     for(var i=0;i < order.length;i++) {
         if (sval == order[i].ordrId || sval == order[i].customerId || sval == order[i].customersName) {
             $("#tbl-orders tbody tr").remove();
@@ -27,9 +27,10 @@ function searchOrder() {
                 '</td>' +
                 '</tr>';
             $("#tbl-orders tbody").append(html);
+        test=false;
         }
-        else {loadOrder();}
     }
+    if(test){loadOrder()}
 }
 $('#txtSearch').keyup(function () {
     sval = $('#txtSearch').val();

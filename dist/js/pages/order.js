@@ -13,6 +13,7 @@ $(function () {
     $("#tbl-placeorder").on('click','tbody tr td i',function () {
         if (confirm("Do You Wish To Delete This OrderDetail..!")) {
             $(this).parents("tr").fadeOut(1000, function () {
+               alert( (this).parents("tr").children("td").val());
                 $(this).remove();
                 showOrHideFooter();
             });
@@ -33,7 +34,7 @@ $(function () {
             '<td>'+description+'</td>'+
             '<td>'+qty+'</td>'+
             '<td>'+unitprice+'</td>'+
-            '<td>'+total+'</td>'+
+            '<td><u>'+total+'</u></td>'+
             '<td><i class="fa fa-trash red"></i></td>'+
             '</tr>';
         $('#tbl-placeorder tbody').append(html);
